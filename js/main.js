@@ -5,10 +5,9 @@ $('button').on('click', function(e){
  	if ( button == true) {
 
  		$('button').removeClass('on');
-
  		$('button').addClass('off');
-
  		$('body').addClass('dark');
+		$('.status').text("Hey, who turned off the light?");
  	}
 
  	else if ( button == false) {
@@ -16,8 +15,11 @@ $('button').on('click', function(e){
  		$('button').removeClass('off');
  		$('button').addClass('on');
  		$('body').removeClass('dark');
- 		$('body').addclass('light');
+ 		$('body').addClass('light');
+ 		$('.status').text("It's so bright in here!");
  	}
+
+
 
  });
 
